@@ -1,0 +1,80 @@
+@media(max-width: 1250px){
+	body{
+	    background: -webkit-linear-gradient(right, #EBF3FF 0%, #EBF3FF 31%, #5A69F2 96%, #5A69F2 100%);
+	    background: -o-linear-gradient(right, #EBF3FF 0%, #EBF3FF 31%, #5A69F2 96%, #5A69F2 100%);
+	    background: linear-gradient(to left, #EBF3FF 0%, #EBF3FF 31%, #5A69F2 96%, #5A69F2 100%); /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */ /* w3c */
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EBF3FF', endColorstr='#5A69F2',GradientType=0 ); /* ie6-9 */
+	}
+	.menu-header{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.main-page{
+		background: unset;
+		height: unset;
+	}
+	.fon{
+		display: none;
+	}
+	.menu{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.menu a{
+		position: static;
+		margin: 30px 0px;
+	}
+	a.mi-1-act, a.mi-2-act, a.mi-3-act, 
+	a.mi-4-act, a.mi-5-act, a.mi-6-act, a.mi-7-act{
+		transform: translate(0,0);
+	}
+	.main-content{
+		width: 100%;
+	}
+	.main-menu{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.burg-btn{
+		display: block;
+	}
+}
+@media(max-width: 992px){
+	.my-btn-primary{
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 560px){
+	.mh-left{
+		flex-wrap: wrap;
+	}
+	.logo{
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	.phones{
+		width: 100%;
+		margin: 20px auto;
+	}
+}
+@media(max-width: 420px){
+	.phones a{
+		font-size: 18px;
+	}
+}
+@media(max-width: 380px){
+	.burg-menu li{
+		font-size: 15px;
+	}
+	.burg-menu h1{
+		font-size: 12px;
+	}
+	.burg-menu{
+		width: 122px;
+	}
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Montaj-uslugi</title>
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="media.css" type="text/css">
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="bootstrap.min.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<section id="main">
+		<div class="main-page">
+											<div class="fon"></div>
+		<div class="burg-menu">
+			<div class="bm-content">
+				<h1>монтаж - услуги</h1>
+				<ul>
+					<a href="#"><li>О нас</li></a>
+					<a href="#"><li>Портфолио</li></a>
+					<a href="#"><li>Контакты</li></a>
+				</ul>
+			</div>
+		</div>
+			<div id="header" class="container">
+				<div class="menu-header">
+				<div class="mh-left">
+					<div class="logo">
+						<a href="/"><img src="https://via.placeholder.com/100x60" alt="-"></a>
+					</div>
+					<div class="phones">
+						<a href="#">+380999999999</a>
+						<a href="#">+380888888888</a>
+					</div>
+				</div>
+								<!-- Кнопка вызова -->
+<button type="button" class="btn btn-primary my-btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  отправить заявку
+</button>
+
+<!-- Окно обратной связи -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content my-mc">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Отправьте нам заявку и мы Вам перезвоним</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	<div class="container">
+		      <div class="row justify-content-center">
+		      	<div class="col-sm-10 form-send">
+		      		<form action="/layout/mail.php" method="POST">
+		      			<legend></legend>
+		      			<div class="form-group">
+		      				<label for="">Введите Ваше имя</label>
+		      				<input type="text" class="form-control" id="" name="user_name">
+		      			</div>
+		      			<div class="form-group">
+		      				<label for="">Введите номер телефона</label>
+		      				<input type="text" class="form-control" id="mess_phone" name="user_phone" required>
+		      			</div>
+		      			<div class="form-group">
+		      				<label for="">Оставьте сообщение</label>
+		      				<textarea type="text" class="form-control" id="" style="margin: 0 auto;" name="user_email"></textarea>
+		      			</div>
+		      			<button type="submit" class="btn btn-primary btn-form-sub">Отправить заявку</button>
+		      		</form>
+		      	</div><!-- .col-sm-4 -->
+		      </div> <!-- .row -->
+    	</div><!-- /.container -->
+    </div>
+    </div>
+  </div>
+</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="main-content">
+					<div class="main-menu">
+							<button class="btn burg-btn">
+								<span></span>
+							</button>
+						<nav class="menu">
+							<a href="#" class="mi-1 mi-1-act">
+								<div class="menu-item">
+									<p>Электромонтаж</p>
+									<div class="disc disc-1">
+										<p>Эелектромонтаж проводки, сборка щитов любой сложности</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="mi-2 mi-2-act">
+								<div class="menu-item">
+									<p>Сантехника</p>
+									<div class="disc disc-2">
+										<p>Прокладка труб, монтаж сантехнических приборов</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="mi-3 mi-3-act">
+								<div class="menu-item">
+									<p>Кондицио-<br>нирование</p>
+									<div class="disc disc-3">
+										<p>Монтаж и обслуживание кондиционеров всех видов</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="mi-4 mi-4-act">
+								<div class="menu-item">
+									<p>Отопление</p>
+									<div class="disc disc-4">
+										<p>Монтаж и ремонт систем отопления, профилактика</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="mi-5 mi-5-act">
+								<div class="menu-item">
+									<p>Сварочные<br>работы</p>
+									<div class="disc disc-5">
+										<p>Сварочные работы любой сложности и масштабов</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="mi-6 mi-6-act">
+								<div class="menu-item">
+									<p>Демонтажные<br>работы</p>
+									<div class="disc disc-6">
+										<p>Демонтажные работы всех видов и любой сложности</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="mi-7 mi-7-act">
+								<div class="menu-item">
+									<p>Вентиляция</p>
+									<div class="disc disc-7">
+										<p>Монтаж и ремонт систем вентиляции</p>
+									</div>
+								</div>
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

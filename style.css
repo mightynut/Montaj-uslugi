@@ -1,0 +1,288 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Play', sans-serif;
+}
+*{
+	z-index: 9;
+}
+.main-page{
+	width: 100%;
+	height: 100vh;
+	background: url(img/1.jpg) center top / cover;
+}
+.main-page img{
+	width: 100%;
+	height: 100%;
+}
+.fon{
+	z-index: 1;
+	opacity: 0.8;
+	position: absolute;
+	width: 100%;
+	height: 100%; /* ff3.6+ */ /* safari4+,chrome */
+    background: -webkit-linear-gradient(right, #EBF3FF 0%, #EBF3FF 31%, #5A69F2 96%, #5A69F2 100%);
+    background: -o-linear-gradient(right, #EBF3FF 0%, #EBF3FF 31%, #5A69F2 96%, #5A69F2 100%);
+    background: linear-gradient(to left, #EBF3FF 0%, #EBF3FF 31%, #5A69F2 96%, #5A69F2 100%); /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */ /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EBF3FF', endColorstr='#5A69F2',GradientType=0 ); /* ie6-9 */
+}
+.menu-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 7;
+}
+.mh-left{
+	display: flex;
+	align-items: center;
+}
+.phones, .logo{
+	z-index: 2;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.phones{
+	display: flex;
+	justify-content: center;
+	margin-left: 40px;
+}
+.phones a:first-child{
+	margin-right: 30px;
+}
+.phones a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 26px;
+}
+.main-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-menu{
+	z-index: 2;
+}
+.menu-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.burg-menu{
+	display: flex;
+	width: 170px;
+	position: absolute;
+	left: -170px;
+	height: 100vh;
+	background: #000000a8;
+	z-index: 10;
+	border-right: 2px solid #fff;
+}
+.burg-menu ul{
+	display: block;
+}
+.bm-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.burg-menu-act{
+	left: 0px;
+}
+.burg-menu ul, .burg-menu li{
+	list-style: none;
+	z-index: 10;
+	margin: 0;
+	padding: 0;
+}
+.burg-menu a{
+	text-decoration: none;
+}
+.burg-menu h1{
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+    color: #FFFFFF;
+	text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+	margin-top: 30px;
+}
+.burg-menu li{
+	font-size: 24px;
+	text-align: center;
+	padding: 10px 20px;
+	color: #fff;
+}
+.burg-menu li:hover{
+	background: #c1bbbba8;
+}
+.burg-btn{
+    background: #fff;
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.burg-btn span, .burg-btn span::before, .burg-btn span::after{
+	margin-top: -1px;
+	margin-left: -10px;
+	position: absolute;
+	width: 20px;
+	height: 2px;
+	background-color: #5a69f2;
+	top: 50%;
+	left: 50%;
+}
+.burg-btn span::before, .burg-btn span::after{
+	content: '';
+	transition: 0.3s;
+}
+.burg-btn span::before{
+	transform: translateY(-5px);
+}
+.burg-btn span::after{
+	transform: translateY(5px);
+}
+.burg-btn-active span::before{
+	transform: rotate(45deg);
+}
+.burg-btn-active span{
+	height: 0;
+}
+.burg-btn-active span::after{
+	transform: rotate(-45deg);
+}
+.menu{
+	position: relative;
+}
+.menu a{
+	display: block;
+	box-shadow: 0px 0px 40px #000;
+	text-decoration: none;
+	height: 240px;
+	width: 240px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	transition: 0.4s;
+	overflow: hidden;
+	border: 4px solid #5a69f2;
+	transform: translate(-39%, -33%);
+}
+.menu-item{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.menu-item p{
+	text-align: center;
+	margin: 0;
+	color: #FFFFFF;
+	text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+	font-size: 26px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.disc{
+	border-top: 2px solid #fff;
+	height: 40%;
+	width: 100%;
+	z-index: 4;
+	background: #000000a8;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transiton: 0.3s;
+	transform: translate(-50%,0);
+}
+.disc p{
+	display: block;
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	text-shadow: none;
+}
+.mi-1 .menu-item{
+	background: url(img/elektromontaj.jpg) center top / cover;
+}
+.mi-2 .menu-item{
+	background: url(img/santehnika.jpg) center top / cover;
+}
+.mi-3 .menu-item{
+	background: url(img/kondicionirovanie.jpg) center top / cover;
+}
+.mi-4 .menu-item{
+	background: url(img/otoplenie.jpg) center top / cover;
+}
+.mi-5 .menu-item{
+	background: url(img/svarochnye-raboty.jpg) center top / cover;
+}
+.mi-6 .menu-item{
+	background: url(img/demontajnie-raboty.jpg) center top / cover;
+}
+.mi-7 .menu-item{
+	background: url(img/ventiliaciya.jpg) center top / cover;
+}
+a.mi-1-act{
+	transform: translate(-218%, -22%);
+}
+a.mi-2-act{
+	transform: translate(-138%, 49%);
+}
+a.mi-3-act{
+	transform: translate(-242%, 84%);
+}
+a.mi-4-act{
+	transform: translate(-39%, 10%);
+}
+a.mi-5-act{
+	transform: translate(142%, -19%);
+}
+a.mi-6-act{
+	transform: translate(61%, 49%);
+}
+a.mi-7-act{
+	transform: translate(164%, 84%);
+}
+.my-btn-primary{
+	z-index: 7;
+	text-transform: uppercase;
+	border-radius: unset;
+	padding: 6px 40px;
+	font-size: 18px;
+	display: block;
+	box-shadow: 0px 0px 14px #000;
+}
+.modal-header{
+	border-bottom: 2px solid #fff;
+}
+.my-mc{
+	background: #167cd4e8;
+	border: 2px solid #fff;
+}
+.my-mc label{
+	color: #fff;
+}
+.modal-title{
+	color: #fff;
+}
+.my-mc input, .my-mc textarea{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+	color: #fff;
+	border-radius: unset;
+}
+.btn-form-sub{
+	background: #2cc307;
+	border-color: #2cc307;
+}
