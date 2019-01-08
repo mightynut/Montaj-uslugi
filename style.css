@@ -70,6 +70,7 @@ body{
 .burg-menu{
 	display: flex;
 	width: 170px;
+	height: 100vh;
 	position: fixed;
 	left: -170px;
 	height: 100vh;
